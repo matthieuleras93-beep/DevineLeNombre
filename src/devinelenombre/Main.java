@@ -26,6 +26,12 @@ public class Main {
             System.out.println("Votre proposition:");
             Scanner sc=new Scanner(System.in);
             proposition=sc.nextInt();
+            if (proposition<Nombre_Secret){
+                System.out.println("C'est plus grand!");
+            }
+            else if(proposition>Nombre_Secret){
+                System.out.println("C'est plus petit!");
+            }
         }
         System.out.println("Bravo! Vous avez gagne!");
     }
