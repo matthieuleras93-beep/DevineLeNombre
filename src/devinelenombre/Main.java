@@ -27,14 +27,19 @@ public class Main {
         while (proposition!=Nombre_Secret){
             System.out.println("Votre proposition:");
             Scanner sc=new Scanner(System.in);
-            proposition=sc.nextInt();
-            if (proposition<Nombre_Secret){
-                System.out.println("C'est plus grand!");
-            }
-            else if(proposition>Nombre_Secret){
-                System.out.println("C'est plus petit!");
-            }
-            Nombre_Essais++;
+            if (sc.hasNextInt()){
+                proposition=sc.nextInt();
+                if (proposition<Nombre_Secret){
+                    System.out.println("C'est plus grand!");
+                }
+                else if(proposition>Nombre_Secret){
+                    System.out.println("C'est plus petit!");
+                }
+            }else{
+                    System.out.println("Erreur! Veuillez entrer un nombre entier!");
+                    sc.next();
+                }
+                Nombre_Essais++;
         }
         System.out.println("Bravo! Vous avez gagne en "+Nombre_Essais+" essais!");
     }
