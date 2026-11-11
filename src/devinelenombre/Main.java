@@ -21,6 +21,8 @@ public class Main {
         System.out.println("Nombre secret:"+Nombre_Secret);
         
         int proposition=0;
+        int Nombre_Essais=0;
+
         System.out.println("Devinez le nombre entre 1 et 100!");
         while (proposition!=Nombre_Secret){
             System.out.println("Votre proposition:");
@@ -32,8 +34,9 @@ public class Main {
             else if(proposition>Nombre_Secret){
                 System.out.println("C'est plus petit!");
             }
+            Nombre_Essais++;
         }
-        System.out.println("Bravo! Vous avez gagne!");
+        System.out.println("Bravo! Vous avez gagne en "+Nombre_Essais+" essais!");
     }
     
 }
