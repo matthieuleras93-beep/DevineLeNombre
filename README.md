@@ -46,3 +46,13 @@ Technologies utilisées:
 
 \-Java: 26.0.2
 
+
+
+Comment ouvrir et exécuter le programme avec NetBeans;
+
+1\. Sélectionner File puis Open Project
+
+2\. Sélectionner le dossier du projet
+
+3\. Appuyer sur F6 (Run) ou le bouton associé(Flèche Verte)
+
